@@ -9,6 +9,7 @@ Given input array nums = [1,1,2],
 Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter what you leave beyond the new length.
 */
 
+// Solution 1:
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
@@ -26,3 +27,13 @@ public:
         return index + 1;
     }
 };
+
+/*
+// Solution 2:
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        return distance(nums.begin(), unique(nums.begin(), nums.end()));
+    }
+};
+*/

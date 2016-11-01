@@ -18,8 +18,7 @@ public:
         }
         
         int index = 0;
-        for (size_t i = 1; i < nums.size(); ++i)
-        {
+        for (size_t i = 1; i < nums.size(); ++i) {
             if ( nums[index] != nums[i] ) {
                 nums[++index] = nums[i];
             }
